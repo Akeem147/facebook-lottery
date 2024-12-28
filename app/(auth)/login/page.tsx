@@ -14,7 +14,7 @@ export default function LoginPage() {
 
   const handleLogin = async () => {
     try {
-      if (email === "new@gmail.com" && password === "password123") {
+      if (email === "Carolmarusak01.com" && password === "Carol123") {
         toast.success("Logged in successfully!", {
           icon: "✅",
         });
