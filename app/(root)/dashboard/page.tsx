@@ -11,20 +11,20 @@ const Dashboard: React.FC = () => {
   const [showLogoutModal, setShowLogoutModal] = useState(false);
 
   const user = {
-    name: "Brain Willy",
-    balance: "$3,000,000",
+    name: 'Carol L. Marusak',
+    balance: "$800,000",
     transactions: [
       {
         id: 1,
-        date: "2024-11-20",
-        description: "Facebook Treasury Deposit",
-        amount: "$3,000,000",
+        date: "2024-12-26",
+        description: "Facebook Winnings Deposit",
+        amount: "$800,000",
       },
       {
         id: 2,
-        date: "2024-11-18",
-        description: "Facebook Treasury Deposit",
-        amount: "-$3,000,000",
+        date: "2024-12-26",
+        description: "Facebook Winnings Deposit",
+        amount: "-$800,000",
       },
     ],
   };
@@ -40,16 +40,16 @@ const Dashboard: React.FC = () => {
   const transactions: Transaction[] = [
     {
       id: 1,
-      date: "2024-11-19",
-      description: "Facebook Treasury Deposit",
-      amount: 750000,
+      date: "2024-12-26",
+      description: "Facebook Winnings Deposit",
+      amount: 500000,
       type: "credit",
     },
     {
       id: 2,
-      date: "2024-11-19",
-      description: "Facebook Treasury Deposit",
-      amount: 750000,
+      date: "2024-12-26",
+      description: "Compensated Winnings Deposit",
+      amount: 300000,
       type: "credit",
     },
   ];
@@ -156,7 +156,7 @@ const Dashboard: React.FC = () => {
           <div className="bg-gray-100 p-4 rounded-lg text-left">
             <p className="text-lg font-semibold text-[#191919]">#FB-20241119</p>
             <p className="text-sm text-[#191919]">
-              Claim Amount: <span className="text-green-600">$3,000,000</span>
+              Claim Amount: <span className="text-green-600">$800,000</span>
             </p>
           </div>
           <div className="text-left mt-4">

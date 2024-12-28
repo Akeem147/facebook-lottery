@@ -16,7 +16,7 @@ export default function FixedHeader() {
     <h4 className="hidden lg:block text-xl font-semibold">Overview</h4>
     <Image
         className="rounded-[50%] object-cover w-8 h-8"
-        src="/patson.jpg"
+        src="/ibile.jpg"
         width={24}
         height={24}
         alt="img"

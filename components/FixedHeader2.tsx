@@ -16,7 +16,7 @@ export default function FixedHeader2() {
     <h4 className="hidden lg:block text-xl font-semibold">Dashboard</h4>
     <Image
         className="rounded-[50%] object-cover w-8 h-8"
-        src={"/patson.jpg"}
+        src={"/ibile.jpg"}
         width={24}
         height={24}
         alt="img"
