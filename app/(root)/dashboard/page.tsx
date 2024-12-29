@@ -106,9 +106,10 @@ const Dashboard: React.FC = () => {
           {/* Banner */}
           <section className="bg-green-100 p-4 shadow-lg mb-6">
             <h2 className="text-lg md:text-xl font-bold text-green-700">
-              🎉 Congratulations, {user?.name || "Guest"}! You're our latest
-              lucky winner! 🎉
+              🎉 Congratulations, {user?.name || "Guest"}! You&apos;re our
+              latest lucky winner! 🎉
             </h2>
+
             <p className="text-sm text-green-600">
               Verify your prize details and claim your winnings below.
             </p>
