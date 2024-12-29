@@ -106,7 +106,7 @@ const Dashboard: React.FC = () => {
           {/* Banner */}
           <section className="bg-green-100 p-4 shadow-lg mb-6">
             <h2 className="text-lg md:text-xl font-bold text-green-700">
-              🎉 Congratulations, {user?.name || "Guest"}! You&apos;re our
+              🎉 Congratulations, {user?.name || "Guest"}! You are our
               latest lucky winner! 🎉
             </h2>
 
