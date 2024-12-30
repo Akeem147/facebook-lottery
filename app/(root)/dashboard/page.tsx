@@ -164,7 +164,7 @@ const Dashboard: React.FC = () => {
               href={"/claim-winnings"}
               className="bg-blue-600 text-white px-6 py-2 rounded-lg"
             >
-              Claim Now
+              Claim Now!
             </Link>
           </div>
         </section>
