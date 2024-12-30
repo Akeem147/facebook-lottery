@@ -43,7 +43,7 @@ export default function LoginPage() {
           <div className="text-center mb-6">
             <Image
               src="/facebook.png" // Add your Facebook logo in the public folder
-              alt="Facebook Logo"
+              alt="Facebook Log"
               width={40}
               height={40}
               className="mx-auto"
