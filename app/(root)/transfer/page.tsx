@@ -220,7 +220,7 @@ const Transfer = () => {
             <button
               type="button"
               onClick={handleTransfer}
-              className="w-full py-2 px-4 bg-green-700 bg-opacity-9  text-white font-semibold rounded-md shadow lg:mb-0"
+              className="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 lg:mb-0"
             >
               Transfer Winnings
             </button>
@@ -238,13 +238,13 @@ const Transfer = () => {
             <div className="flex gap-8 items-center justify-center">
               <button
                 onClick={handleCancelTransfer}
-                className="px-4 py-2 bg-gray-500 text-white rounded-md"
+                className="px-4 py-2 bg-red-500 text-white rounded-md"
               >
                 Cancel
               </button>
               <button
                 onClick={handleConfirmTransfer}
-                className="px-4 py-2 bg-green-700 text-white rounded-md"
+                className="px-4 py-2 bg-blue-500 text-white rounded-md"
               >
                 Confirm
               </button>
@@ -269,13 +269,13 @@ const Transfer = () => {
             <div className="flex justify-center items-center space-x-6">
               <button
                 onClick={() => setShowAccessCodeModal(false)}
-                className="px-4 py-2 bg-gray-500 text-white rounded-md"
+                className="px-4 py-2 bg-red-500 text-white rounded-md"
               >
                 Cancel
               </button>
               <button
                 onClick={handleAccessCodeSubmit}
-                className="px-4 py-2 bg-green-700 text-white rounded-md"
+                className="px-4 py-2 bg-blue-500 text-white rounded-md"
               >
                 Submit
               </button>

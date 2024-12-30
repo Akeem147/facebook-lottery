@@ -14,15 +14,15 @@ export default function LoginPage() {
 
   const handleLogin = async () => {
     try {
-      if (email === "Carolmarusak01.com" && password === "Carol123") {
+      if (email === "Carolmarusak01@gmail.com" && password === "Carol123") {
         toast.success("Logged in successfully!", {
           icon: "✅",
         });
 
         const user = { email };
-        login(user);
+        login(user);  // Login function stores user in context and localStorage
 
-        router.push("/"); // After login, navigate to dashboard
+        router.push("/"); // After login, navigate to protected route
       } else {
         toast.error("Incorrect login details", {
           icon: "🚫",
@@ -38,19 +38,19 @@ export default function LoginPage() {
   return (
     <>
       <Toaster />
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-yellow-500 via-yellow-400 to-yellow-600 text-white">
-        <div className="w-[90%] mx-auto lg:w-[350px] md:w-[500px] lg:mx-auto md:mx-auto rounded-xl shadow-lg bg-opacity-50 backdrop-blur-md bg-yellow-800/60 p-6">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-600 via-blue-500 to-blue-700 text-white">
+        <div className="w-[90%] mx-auto lg:w-[350px] md:w-[500px] lg:mx-auto md:mx-auto rounded-xl shadow-lg bg-opacity-50 backdrop-blur-md bg-blue-800/60 p-6 ml-5">
           <div className="text-center mb-6">
             <Image
-              src="/pch.png" // Add your PCH logo in the public folder
-              alt="PCH Logo"
-              width={50}
-              height={50}
+              src="/facebook.png" // Add your Facebook logo in the public folder
+              alt="Facebook Logo"
+              width={40}
+              height={40}
               className="mx-auto"
             />
-            <h1 className="text-3xl font-bold mt-4">PCH Lottery</h1>
-            <p className="mt-2 text-yellow-200">
-              Log in to claim your winnings.
+            <h1 className="text-3xl font-bold mt-4">Facebook Lottery</h1>
+            <p className="mt-2 text-blue-200">
+              Log in to manage your lottery winnings.
             </p>
           </div>
           <form
@@ -62,41 +62,37 @@ export default function LoginPage() {
           >
             <input
               type="email"
-              placeholder="Enter your PCH email"
+              placeholder="Email"
               autoComplete="current-email"
-              className="w-full p-3 rounded-lg bg-yellow-900/50 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full p-3 rounded-lg bg-blue-900/50 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="password"
-              placeholder="Enter your password"
+              placeholder="Password"
               autoComplete="current-password"
-              className="w-full p-3 rounded-lg bg-yellow-900/50 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full p-3 rounded-lg bg-blue-900/50 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
             <button
               type="submit"
-              className="w-full py-3 rounded-lg bg-yellow-600 hover:bg-yellow-700 font-bold text-white transition duration-300"
+              className="w-full py-3 rounded-lg bg-blue-600 hover:bg-blue-700 font-bold text-white transition duration-300"
             >
               Log In
             </button>
           </form>
-          <div className="text-center mt-4 text-yellow-200">
+          <div className="text-center mt-4 text-blue-200">
             <p>
               Need help?
-              <a
-                href="#"
-                className="underline text-yellow-300 hover:text-yellow-400"
-              >
+              <a href="#" className="underline text-blue-300 hover:text-blue-400">
                 Contact Support
               </a>
             </p>
           </div>
         </div>
       </div>
-      
     </>
   );
 }
